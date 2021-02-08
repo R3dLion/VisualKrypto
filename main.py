@@ -90,9 +90,11 @@ if (height)!=(width):
           column2 = column + 2
       row += 1
 
-  img_first.save('first.bmp')
-  img_second.save('second.bmp')
+  img_first.save('1.bmp')
+  img_second.save('2.bmp')
 
+  #combined 1&2 construction:
+  
   img_out = Image.new("1", (height * 2, width * 2), "white")
 
   for row in range(height * 2):
@@ -104,4 +106,4 @@ if (height)!=(width):
           else:
               img_out.putpixel((col, row), 0)
 
-  img_out.save('out.bmp')
+  img_out.save('final.bmp')
